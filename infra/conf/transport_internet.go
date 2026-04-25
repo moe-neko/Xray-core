@@ -1896,7 +1896,7 @@ func (c *Xicmp) Build() (proto.Message, error) {
 	}
 
 	if config.Ip == "" {
-		config.Ip = "0.0.0.0"
+		config.Ip = "::"
 	}
 
 	return config, nil
